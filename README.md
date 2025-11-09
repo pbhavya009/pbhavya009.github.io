@@ -2,7 +2,7 @@
 
 [![Live Website](https://img.shields.io/badge/Click_to_Check_Live-66FCF1?style=for-the-badge&logo=github&logoColor=black)](https://pbhavya009.github.io)
 
-![Portfolio Preview](./network_dashboards/network_dashboard1.png)
+![Portfolio Preview](network_dashboard(1).png)
 
 ---
 
