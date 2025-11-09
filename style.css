@@ -54,28 +54,27 @@ header h1 {
   letter-spacing: 1px;
 }
 
-/* ===== HOME SECTION ===== */
+/* ===== HOME SECTION (fixed layout) ===== */
 .home {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 100px 60px;
   background-color: #0b0c10;
+  padding: 80px 40px;
 }
 
 .home-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 40px;
   max-width: 1100px;
   width: 100%;
+  gap: 40px;
 }
 
 .home-content {
-  flex: 1 1 55%;
-  color: #c5c6c7;
+  flex: 1;
+  text-align: left;
 }
 
 .home-content h1 {
@@ -91,27 +90,29 @@ header h1 {
 }
 
 .home-content p {
+  color: #c5c6c7;
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 20px;
+  max-width: 550px;
 }
 
 .home-img {
-  flex: 1 1 35%;
+  flex: 0 0 280px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .home-img img {
-  width: 280px;
-  height: 280px;
-  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  border-radius: 20px; /* ✅ Square with soft corners (professional look) */
   object-fit: cover;
   border: 3px solid #66fcf1;
-  box-shadow: 0 0 20px rgba(102, 252, 241, 0.4);
+  box-shadow: 0 0 25px rgba(102, 252, 241, 0.4);
 }
 
-/* Make layout stack neatly on smaller screens */
+/* ===== Responsive for mobile ===== */
 @media (max-width: 768px) {
   .home-container {
     flex-direction: column-reverse;
@@ -119,12 +120,18 @@ header h1 {
     text-align: center;
   }
 
-  .home-img img {
-    width: 220px;
-    height: 220px;
+  .home-img {
+    justify-content: center;
     margin-bottom: 20px;
   }
+
+  .home-img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+  }
 }
+
 
 /* ===== PROJECTS SECTION ===== */
 .projects {
@@ -330,4 +337,5 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
 
